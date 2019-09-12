@@ -42,5 +42,9 @@ dependencies {
     //Databinding setup
 //    kapt "com.android.databinding:compiler:$gradle_version"
 
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
 
 }
