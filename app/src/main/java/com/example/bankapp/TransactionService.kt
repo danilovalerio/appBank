@@ -1,9 +1,11 @@
 package com.example.bankapp
 
-import data.Transaction
+import com.example.bankapp.data.Transaction
+import com.example.bankapp.extensions.fromJson
 
 object TransactionService {
     private const val BASE_URL = "https://bank-app-test.herokuapp.com/api/statements/"
+
     //Busca os itens com base no id
     fun getTransactions(id:String): List<Transaction> {
         //cria url para o id
@@ -16,4 +18,5 @@ object TransactionService {
         val transactions = fromJson<List<Transaction>>(json)
         return transactions
     }
+
 }

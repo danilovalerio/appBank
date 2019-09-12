@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<!--    Tela inicial em fullscreen-->
+    <style name="Theme.AppCompat.LightFullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--    Tela sem bar title-->
+    <style name="Theme.AppCompat.LightComAction" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
 </resources>
