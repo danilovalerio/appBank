@@ -21,6 +21,11 @@ class TransactionsFragment : Fragment() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        viewModel.load()
+    }
+
     override fun onCreateView(@NonNull inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding : TransactionsFragmentBinding = TransactionsFragmentBinding.inflate(inflater, container, false)
         binding.viewModel = viewModel
